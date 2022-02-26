@@ -187,6 +187,7 @@ html {
 
 .img1 {
     width: 100%;
+    object-fit: cover;
 }
 
 #slider .text-content {
@@ -195,6 +196,7 @@ html {
     color: #fff;
     width:100%;
     text-align: center;
+    text-shadow: 0 2px 3px #ccc;
 }
 
 #slider .text-heading {
