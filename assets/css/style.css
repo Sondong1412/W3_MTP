@@ -6,6 +6,7 @@
 }
 html {
     font-family: Arial, Helvetica, sans-serif ;
+    scroll-behavior: smooth;
 }
 /* 
 1. Từ ngoài vào trong
@@ -74,6 +75,9 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn1:hover {
@@ -93,7 +97,7 @@ html {
     left: 0;
     right: 0;
     height: 46px;
-    background-color: black;
+    background-color: #000;
     z-index: 1;
 }
 
@@ -161,6 +165,24 @@ html {
     font-size: 15px;
 }
 
+#header .mobile-menu-btn {
+    float:right;
+    padding:0 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #f44336;
+}
+
+#header .menu-icon {
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
 #header .search-btn {
     float:right;
     padding:0 21px;
@@ -181,14 +203,12 @@ html {
 
 #slider{
     position: relative;
-    /* margin-top: 46px ;
-    padding-top: 53%; */
+    margin-top: 46px ;
+    padding-top: 53%;
+    background: url('../img/slider/ST_MTP.jpg') top center / cover  no-repeat;
+    max-width: 100%;
 }
 
-.img1 {
-    width: 100%;
-    object-fit: cover;
-}
 
 #slider .text-content {
     position: absolute;
@@ -196,7 +216,7 @@ html {
     color: #fff;
     width:100%;
     text-align: center;
-    text-shadow: 0 2px 3px #ccc;
+    text-shadow: 0 0 2px #000;
 }
 
 #slider .text-heading {
@@ -215,9 +235,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -289,6 +312,7 @@ html {
     color: #fff;
     padding: 3px 4px;
     margin-left: 16px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .tickets-list .quantity {
@@ -307,7 +331,7 @@ html {
 /* Places */
 .places-list {
     display: flex;
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .imgOut{
@@ -365,6 +389,15 @@ html {
     display: inline-block;
 }
 
+.contact-info a {
+    color:#2196F3;
+    opacity: 0.6;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .contact-form {
     font-size: 15px;
 }
@@ -396,7 +429,8 @@ html {
 }
 
 #footer .socials-list a:hover {
-    opacity: 0.6;
+    opacity: 0.8;
+    color: #ff0000;
 }
 
 #footer .copyright {
@@ -410,7 +444,8 @@ html {
 }
 
 #footer .copyright a:hover {
-    opacity: 0.6;
+    opacity: 0.8;
+    color: #ff0000;
 }
 
 .modal {
@@ -466,11 +501,13 @@ html {
 
 .modal-body {
     padding: 16px;
+
 }
 
 .modal-label {
     display: block;
-    font-size: 15px;
+    font-size: 15px;  
+    font-weight: 600;
 }
 
 .modal-input {

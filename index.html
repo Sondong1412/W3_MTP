@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sơn Tùng - MTP</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -12,12 +13,12 @@
         <div id="header">
         <!--Begin: Nav-->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-double-down"></i>
                     </a>
@@ -30,6 +31,12 @@
             </ul>
         <!--End: Nav-->
 
+        <!--Begin: Menu mobile button  -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+        <!--End: Menu mobile button  -->
+
         <!--Begin: Search button-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
@@ -38,7 +45,6 @@
         </div>
 
         <div id="slider">
-            <img src="./assets/img/team/ST_MTP.jpg" class="img1"  alt="">
                 <div class="text-content">
                     <h2 class="text-heading">Sơn Tùng - MTP</h2>
                     <div class="text-decription"> Hoàng tử V-pop </div>
@@ -46,7 +52,7 @@
         </div>
         <div id="content">
             <!--About section-->          
-            <div class="content-section">
+            <div id="about" class="content-section">
                 <h2 class="section-heading">ABOUT</h2>
                 <p class="section-sub-heading">Sơn Tùng - MTP và các thành viên trong MTP Entertaiment</p>
                 <p class="about-text">
@@ -69,7 +75,7 @@
                 <div class="member-list">
                     <div class="col-third member-item">
                     <p class="member-name"> Kay Trần </p>
-                        <img src="./assets/img/team/KAY1.jpg" alt="Kay Trần" class="member-img">
+                        <img src="./assets/img/team/KAY1.jpg" alt="Kay Trần" class="member-img" >
                     </div>
                     
                     <div class="clear"></div>
@@ -78,21 +84,21 @@
             
 
              <!-- Tour section -->                                                                          `
-             <div class="tour-section">
+             <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Đặt vé của bạn tại đây!</p>
 
              <!-- Tickets -->       
                     <ul class="tickets-list">
-                        <li>Tháng 1 <span class="sold-out">Sold out</span></li>
-                        <li>Tháng 6 <span class="sold-out">Sold out</span></li>
+                        <li>Tháng 1 <span class="sold-out">Đã hết</span></li>
+                        <li>Tháng 6 <span class="sold-out">Đã hết</span></li>
                         <li>Tháng 12 <span class="quantity">9</span></li>
                     </ul>
 
              <!-- Places -->
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <div class="imgOut">
                                 <img src="./assets/img/places/HN.jpg" alt="TP Hà Nội" class="places-img">
                             </div>
@@ -100,11 +106,11 @@
                                 <h3 class="places-heading">Thành Phố Hà Nội</h3>
                                 <p class="places-time">Ngày 14 Tháng 12 Năm 2022</p>
                                 <p class="places-desc">Tuyệt! Hẹn gặp các bạn tại Thành Phố Hà Nội!</p>
-                                <button class="btn btn1 js-buy-ticket">Buy Tickets</button>
+                                <button class="btn btn1 js-buy-ticket s-full-width">Mua vé</button>
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <div class="imgOut">
                                 <img src="./assets/img/places/DN.jpg" alt="TP Đà Nẵng" class="places-img">
                             </div>
@@ -112,11 +118,11 @@
                                 <h3 class="places-heading">Thành Phố Đà Nẵng</h3>
                                 <p class="places-time">Ngày 16 Tháng 12 Năm 2022</p>
                                 <p class="places-desc">Tuyệt! Hẹn gặp các bạn tại Thành Phố Đà Nẵng!</p>
-                                <button class="btn btn1 js-buy-ticket">Buy Tickets</button>
+                                <button class="btn btn1 js-buy-ticket s-full-width">Mua vé</button>
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <div class="imgOut">
                                 <img src="./assets/img/places/HCM.jpg" alt="TP Hồ Chí Minh" class="places-img">
                             </div>
@@ -124,7 +130,7 @@
                                 <h3 class="places-heading">Thành Phố Hồ Chí Minh</h3>
                                 <p class="places-time">Ngày 14 Tháng 12 Năm 2022</p>
                                 <p class="places-desc">Tuyệt! Hẹn gặp các bạn tại Thành Phố Hồ Chí Minh!</p>
-                                <button class="btn btn1 js-buy-ticket">Buy Tickets</button>
+                                <button class="btn btn1 js-buy-ticket s-full-width">Mua vé</button>
                             </div>
                         </div>
                     </div>
@@ -132,24 +138,24 @@
              </div>  
 
             <!--Begin: Contact section-->          
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Bạn là fan? Để lại ghi chú tại đây!</p>
 
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Hà Nam, Việt Nam</p>
-                        <p><i class="ti-mobile"></i>Phone: +8468143835</p>
-                        <p><i class="ti-email"></i>Email: sondongnguyen2k@gmail.com</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tell:+8468143835"> +8468143835</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:sondongnguyen2k@gmail.com">sondongnguyen2k@gmail.com</a> </p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
 
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="Email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                                 <div class="clear"></div>
@@ -160,7 +166,7 @@
                                     <input type="text" name="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class="btn1 pull-right mt-16" type="submit" values="SEND">
+                            <input class="contact-submit-btn btn1 pull-right mt-16 s-full-width" type="submit" values="Gửi">
                         </form>
                     </div>
                 </div>
@@ -250,6 +256,42 @@
             event.stopPropagation()
         })
     </script>
+
+
+    <!-- js đóng mở menu mobile -->
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        //đóng mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            }
+            else {
+                header.style.height = null
+            }
+        }
+
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0; i< menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+            var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav')
+                if (isParentMenu) {
+                    event.preventDefault()
+                }
+                else {
+                    header.style.height = null
+                }
+            }
+        }
+    </script>
+
 
 </body>
 </html>
