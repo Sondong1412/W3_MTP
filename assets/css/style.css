@@ -289,10 +289,17 @@ html {
     border-radius: 6px;
 }
 
-#content .audio {
+/* #content .audio {
     display:flex;
     justify-content: center;
     margin: 50px 0 0 0;
+} */
+
+#content .video {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    margin: 100px 0 0 0;
 }
 
 /*Tour section */
